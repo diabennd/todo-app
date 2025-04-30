@@ -1,6 +1,7 @@
 import "./App.css";
 import SideBar from "./components/SideBar";
 import MainPage from "./components/MainPage";
+import DetailPage from "./components/DetailPage";
 import { useState } from "react";
 
 const todoList = [
@@ -68,6 +69,7 @@ function App() {
       <div className="flex">
         <SideBar setMenu={setMenu}/>
         <MainPage todos={todos} menu={menu} handleAddButton={handleAddButton}/>
+        <DetailPage />
       </div>
     </>
   );
