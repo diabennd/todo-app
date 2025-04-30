@@ -5,12 +5,12 @@ const TodoList = ({ tasks }) => {
     <>
       {tasks.map((list) => {
         return (
-          <div className="flex flex-justify-center items-center gap-4 border-t border-b border-gray-300 w-[40vw] mb-2 p-2 text-xs">
-            <input type="checkbox" name="" id="completed" />
-            <button id="completed" className="flex flex-1 justify-start">
+          <div key={list.id} className="flex flex-justify-center items-center gap-4  border-t border-b border-gray-300 w-[40vw] mb-2 p-2 text-xs">
+            <input type="checkbox" name="" id="completed" className="cursor-pointer"/>
+            <button id="completed" className="flex flex-1 justify-start cursor-pointer">
               {list.title}
             </button>
-            <button>
+            <button className="cursor-pointer">
               <img src={arrowIcon} alt="" />
             </button>
           </div>
