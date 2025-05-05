@@ -16,7 +16,7 @@ export default function SideBar({ setMenu }) {
               setMenu(tab);
             }}
             key={tabIndex}
-            className="flex pl-5 py-1 justify-start bg-green-300 mt-4.5 w-full cursor-pointer active:border-b active:border-gray-500 hover:border hover:border-gray-500"
+            className="flex pl-5 py-1 justify-start mt-4.5 w-full cursor-pointer "
           >
             {tab}
           </button>
